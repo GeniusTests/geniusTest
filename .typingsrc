@@ -1,0 +1,4 @@
+{
+    "proxy" : "http://proxy.manitougroup.com:8080",
+    "rejectUnauthorized" : false
+}
