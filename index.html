@@ -1,23 +1,64 @@
 <html>
 <head>
-    <title>Angular 2 QuickStart</title>
+    <title>Genius Test platform</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Resources/public/components/semantic/dist/semantic.min.css">
     <!-- 1. Load libraries -->
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="Resources/public/components/jquery/dist/jquery.min.js"></script>
+    <script src="Resources/public/components/semantic/dist/semantic.min.js"></script>
+
+
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
     <script>
-        System.import('app').catch(function(err){ console.error(err); });
+        System.import('app').catch(function (err) {
+            console.error(err);
+        });
     </script>
 </head>
 <!-- 3. Display the application -->
 <body>
-<geniustest>Loading...</geniustest>
+<div class="ui bottom attached segment">
+    <p></p>
+</div>
+<div class="ui fixed inverted menu">
+    <div class="ui container">
+        <a href="#" class="header item">
+            Genius Test
+        </a>
+        <div class="right menu">
+            <div class="ui item link">
+                <i class="alarm icon"></i>
+            </div>
+            <div class="ui simple dropdown item">
+                <i class="add icon"></i> <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item" href="#">New project</a>
+                    <a class="item" href="#">New organization</a>
+                </div>
+            </div>
+            <div class="ui simple dropdown item">
+                <img class="ui avatar image" src="/Resources/public/images/square-image.png"> <i
+                    class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item" href="#">Your profile</a>
+                    <div class="divider"></div>
+                    <a class="item" href="#">Settings</a>
+                    <a class="item" href="#">Sign out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="ui main container" style="margin-top: 7em;">
+
+    </div>-->
+    <geniustest>Loading...</geniustest>
 </body>
 </html>

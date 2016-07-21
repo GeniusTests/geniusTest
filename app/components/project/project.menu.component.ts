@@ -9,7 +9,6 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'div[project-menu]',
     template: `
-        <div class="right floated left aligned three wide column">
             <div class="ui small inverted grey vertical menu">
                 <div class="active item">
                     Your projects
@@ -32,10 +31,9 @@ import {Component} from '@angular/core';
                     </div>
                 </div>
             </div>
-        </div>
     `
 })
-export class FeedComponent {
+export class ProjectMenuComponent {
     /*heroes:Hero[] = [];
 
      constructor(private heroService:HeroService) {
